@@ -42,4 +42,125 @@ body {
     -webkit-text-stroke: 1.5px #fff; /* borde para dar más grosor */
 }
 
-/* Animación de escritura
+/* Animación de escritura */
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #25D366;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .05em;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #25D366; }
+}
+
+/* Logo */
+.logo {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* Botón WhatsApp */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 20px; /* menos espacio vertical */
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #fff;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.whatsapp-btn i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    filter: brightness(1.1);
+}
+
+/* Botones sociales */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+/* Animación brillo diagonal */
+.social-btn::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(25deg) translate(-150%, -50%);
+    transition: transform 0.5s ease;
+}
+
+.social-btn:hover::after {
+    transform: rotate(25deg) translate(150%, -50%);
+}
+
+.social-btn:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    filter: brightness(1.2);
+}
+
+/* Gradientes personalizados */
+.tiktok { background: #000; }
+.facebook { background: linear-gradient(135deg, #1877F2, #3b5998); }
+.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logo { max-width: 180px; margin-bottom: 25px; }
+    .social-btn { width: 55px; height: 55px; font-size: 24px; }
+    .social-buttons { gap: 15px; }
+    .brand-phrase { font-size: 1.4rem; }
+}
+
+@media (max-width: 480px) {
+    .logo { max-width: 140px; margin-bottom: 20px; }
+    .social-btn { width: 50px; height: 50px; font-size: 22px; }
+    .social-buttons { gap: 12px; }
+    .brand-phrase { font-size: 1.2rem; }
+}
