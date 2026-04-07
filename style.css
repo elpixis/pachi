@@ -184,3 +184,19 @@ body {
     filter: brightness(1.1);
 }
 
+.brand-phrase {
+    font-family: 'Comfortaa', cursive; /* fuente Comfortaa */
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 1.4;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
