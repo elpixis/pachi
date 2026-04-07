@@ -31,11 +31,15 @@ body {
 }
 
 .logo {
-    max-width: 750px;
+    max-width: 500px;
     width: 100%;
     height: auto;
     margin-bottom: 40px;
     animation: slideIn 0.5s ease-out;
+}
+
+.social-section {
+    text-align: center;
 }
 
 .social-text {
