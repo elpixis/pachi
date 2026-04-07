@@ -64,7 +64,7 @@ body {
 
 /* Logo */
 .logo {
-    max-width: 250px;
+    max-width: 600px;
     width: 100%;
     height: auto;
     margin-bottom: 30px;
@@ -77,7 +77,6 @@ body {
     padding: 6px 20px; /* menos espacio vertical */
     font-size: 1.2rem;
     font-weight: 700;
-    text-transform: uppercase;
     white-space: nowrap;
     color: #fff;
     background: linear-gradient(135deg, #25D366, #128C7E);
