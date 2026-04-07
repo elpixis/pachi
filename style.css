@@ -36,7 +36,6 @@ body {
 .brand-phrase {
     font-weight: 700;
     font-size: 1.8rem;
-    margin-bottom: 75px;
     line-height: 1.4;
     text-transform: uppercase;
     -webkit-text-stroke: 1.5px #fff; /* borde para dar más grosor */
@@ -67,7 +66,8 @@ body {
     max-width: 600px;
     width: 100%;
     height: auto;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* Botón WhatsApp */
