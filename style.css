@@ -160,7 +160,7 @@ body {
     width: 100%;
     max-width: 280px;
     margin: 0 auto 25px auto;
-    padding: 15px;
+    padding: 6px 15px; /* 6px arriba/abajo, 20px izquierda/derecha */
     font-size: 1.2rem;
     font-weight: 600;
     font-family: 'Comfortaa', cursive; /* aquí aplicamos Comfortaa */
@@ -193,6 +193,7 @@ body {
     text-align: center;
     line-height: 1.4;
     animation: fadeIn 1s ease-out;
+    -webkit-text-stroke: 1px #fff; /* borde negro alrededor */
 }
 
 @keyframes fadeIn {
