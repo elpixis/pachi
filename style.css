@@ -46,7 +46,7 @@ body {
     white-space: nowrap;
     letter-spacing: .05em;
     position: relative;
-    animation: typing 10s steps(40, end) infinite; /* bucle escribir-borrar */
+    animation: typing 8s steps(40, end) infinite; /* bucle escribir-borrar */
 }
 
 /* Cursor personalizado con "_" */
