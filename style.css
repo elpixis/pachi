@@ -41,25 +41,36 @@ body {
     -webkit-text-stroke: 1.5px #fff; /* borde para dar más grosor */
 }
 
-/* Animación de escritura */
 .typewriter {
     overflow: hidden;
-    border-right: .15em solid #25D366;
     white-space: nowrap;
-    margin: 0 auto;
+    margin: 0 auto 50px auto; /* espacio entre lema y logo */
     letter-spacing: .05em;
-    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    animation: typing 4s steps(40, end) infinite, blink-caret .75s step-end infinite;
+    border-right: none; /* quitamos la barra verde */
+    position: relative;
 }
 
+/* Cursor personalizado con "_" */
+.typewriter::after {
+    content: "_"; /* símbolo del cursor */
+    color: #00BFFF; /* celeste */
+    animation: blink-caret .75s step-end infinite;
+    position: absolute;
+}
+
+/* Animación de escritura */
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
 }
 
+/* Animación del cursor */
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #25D366; }
+    from, to { opacity: 0 }
+    50% { opacity: 1 }
 }
+
 
 /* Logo */
 .logo {
