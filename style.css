@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('pachi.store.web.png') center/cover fixed no-repeat;
+    background: url('media/pachi.store.web.png') center/cover fixed no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -72,9 +72,15 @@ h1 {
     align-items: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    color: #333;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
+    background: transparent;
+    padding: 0;
+}
+
+.social-btn svg {
+    width: 40px;
+    height: 40px;
+    fill: #00B4D8;
+    transition: fill 0.3s ease;
 }
 
 .social-btn:hover {
@@ -82,22 +88,16 @@ h1 {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.tiktok:hover {
-    background: linear-gradient(135deg, #000 0%, #25f4ee 100%);
-    color: white;
-    border-color: #25f4ee;
+.tiktok:hover svg {
+    fill: #000000;
 }
 
-.facebook:hover {
-    background: #1877F2;
-    color: white;
-    border-color: #1877F2;
+.facebook:hover svg {
+    fill: #1877F2;
 }
 
-.instagram:hover {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    color: white;
-    border-color: #f09433;
+.instagram:hover svg {
+    fill: #E1306C;
 }
 
 .whatsapp-btn {
@@ -137,7 +137,11 @@ h1 {
     .social-btn {
         width: 60px;
         height: 60px;
-        font-size: 28px;
+    }
+
+    .social-btn svg {
+        width: 35px;
+        height: 35px;
     }
 
     .social-buttons {
