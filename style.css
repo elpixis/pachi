@@ -161,7 +161,7 @@ body {
     max-width: 280px;
     margin: 0 auto 25px auto;
     padding: 6px 15px; /* 6px arriba/abajo, 20px izquierda/derecha */
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     font-family: 'Comfortaa', cursive; /* aquí aplicamos Comfortaa */
     color: #fff;
@@ -175,7 +175,7 @@ body {
 
 .whatsapp-btn i {
     margin-right: 10px;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .whatsapp-btn:hover {
