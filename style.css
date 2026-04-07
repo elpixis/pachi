@@ -202,3 +202,29 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
+.typewriter {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;              /* oculta el texto mientras se escribe */
+    border-right: .15em solid #25D366; /* cursor parpadeante */
+    white-space: nowrap;           /* evita saltos de línea durante la animación */
+    margin: 0 auto;
+    letter-spacing: .05em;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Animación de escritura */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Animación del cursor */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #25D366; }
+}
+
