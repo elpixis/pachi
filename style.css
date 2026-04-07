@@ -151,3 +151,33 @@ body {
         font-size: 0.9rem;
     }
 }
+
+.whatsapp-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* ocupa el ancho total de los 3 botones */
+    max-width: 280px; /* mismo ancho aproximado que los 3 íconos juntos */
+    margin: 0 auto 25px auto;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    filter: brightness(1.1);
+}
+
