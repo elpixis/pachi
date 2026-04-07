@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('media/pachi.store.web.png') center/cover fixed no-repeat;
+    background: url('pachi.store.web.png') center/cover fixed no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -62,12 +62,8 @@ body {
     text-decoration: none;
     background: #00B4D8;
     padding: 0;
-}
-
-.social-btn svg {
-    width: 45px;
-    height: 45px;
-    fill: white;
+    font-size: 40px;
+    color: white;
 }
 
 .social-btn:hover {
@@ -96,11 +92,7 @@ body {
     .social-btn {
         width: 70px;
         height: 70px;
-    }
-
-    .social-btn svg {
-        width: 40px;
-        height: 40px;
+        font-size: 35px;
     }
 
     .social-buttons {
@@ -117,11 +109,7 @@ body {
     .social-btn {
         width: 60px;
         height: 60px;
-    }
-
-    .social-btn svg {
-        width: 35px;
-        height: 35px;
+        font-size: 30px;
     }
 
     .social-buttons {
