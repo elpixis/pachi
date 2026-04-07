@@ -44,16 +44,14 @@ body {
 .typewriter {
     overflow: hidden;
     white-space: nowrap;
-    margin: 0 auto 50px auto; /* espacio entre lema y logo */
     letter-spacing: .05em;
     position: relative;
-    animation: typing 4s steps(40, end) infinite; /* bucle escribir-borrar */
+    animation: typing 10s steps(40, end) infinite; /* bucle escribir-borrar */
 }
 
 /* Cursor personalizado con "_" */
 .typewriter::after {
-    content: "_"; /* símbolo del cursor */
-    color: #00BFFF; /* celeste */
+    border-right: .15em solid #00BFFF; /* cursor celeste tipo barra */
     position: absolute;
     right: -10px; /* cursor al final del texto */
     animation: blink-caret .75s step-end infinite; /* parpadeo independiente */
