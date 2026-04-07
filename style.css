@@ -31,7 +31,7 @@ body {
 }
 
 .logo {
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     height: auto;
     margin-bottom: 40px;
@@ -98,7 +98,7 @@ body {
 
 /* Gradientes personalizados */
 .tiktok {
-    background: linear-gradient(135deg, #000000, #ff0050, #00f2ea);
+    background: linear-gradient(135deg, #000000 40%, #25F4EE, #FE2C55);
 }
 
 .facebook {
