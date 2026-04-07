@@ -36,7 +36,7 @@ body {
 .brand-phrase {
     font-weight: 700;
     font-size: 1.8rem;
-    margin-bottom: 25px;
+    margin-bottom: 75px;
     line-height: 1.4;
     text-transform: uppercase;
     -webkit-text-stroke: 1.5px #fff; /* borde para dar más grosor */
